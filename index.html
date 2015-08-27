@@ -11,28 +11,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Weather Icons -->
+    <link rel="stylesheet" href="libs/weather-icons/css/weather-icons.css">
     <!-- Main Styles -->
     <link rel="stylesheet" href="stylesheets/css/style.css">
   </head>
   <body>
-    <h1><i id="city"></i> <small><i id="state"></i> l <i id="country"></i></small></h1>
-    <p>Current summary: <i id="cur_summary"></i></p>
-    <p>Precipitation Intensity: <i id="cur_precip_intensity"></i></p>
-    <p>Precipitation Probability: <i id="cur_precip_probability"></i></p>
-    <p>Current temperature: <i id="cur_temp"></i></p>
-    <p>Current apparent temperature: <i id="cur_apparent_temp"></i></p>
-    <p>Humidity: <i id="cur_humidity"></i></p>
-    <p>Wind Speed: <i id="cur_wind_speed"></i></p>
-    <p>Wind Bearing: <i id="cur_wind_bearing"></i></p>
-    <p>Cloud Cover: <i id="cur_cloud_cover"></i></p>
+    <div class="container">
+      <h1><i id="city"></i> <small><i id="state"></i> l <i id="country"></i></small></h1>
+
+      <p id="icon"><i id="cur_icon" class="wi"></i></p>
+      <p><i id="cur_summary"></i></p>
+      <p>Precipitation Probability: <i id="cur_precip_probability"></i></p>
+      <p>Current temperature: <i id="cur_temp"></i></p>
+      <p>Current apparent temperature: <i id="cur_apparent_temp"></i></p>
+      <p>Humidity: <i id="cur_humidity"></i></p>
+      <p>Wind Speed: <i id="cur_wind_speed"></i></p>
+      <p>Wind Bearing: <i id="cur_wind_bearing"></i></p>
+      <p>Cloud Cover: <i id="cur_cloud_cover"></i></p>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Functions -->
-    <!-- <script src="js/functions.js" charset="utf-8"></script> -->
+    <script src="js/functions.js"></script>
     <!-- Scripts -->
-    <script src="js/scripts.js" charset="utf-8"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
