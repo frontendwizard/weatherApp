@@ -1,3 +1,106 @@
+body {
+  height: 100vh;
+  color: #fff;
+  font-family: 'Raleway';
+  font-weight: 200;
+}
 i {
   font-style: normal;
+}
+.container-fluid {
+  padding-right: 0; padding-left: 0;
+}
+.bg-image {
+  background-image: url(../../images/bg/sunny-day.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  footer {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+.bg-color {
+  background-color: #f39c12;
+  height: 100vh;
+  font-size: 2em;
+  font-weight: 100;
+  p > i {
+    font-weight: 500;
+  }
+}
+h1 {
+  small {
+    color: #ddd;
+  }
+}
+footer {
+  width: 100%;
+  i.wi {
+    font-size: 8em;
+    line-height: 1.5;
+  }
+}
+#white_quarter_circle {
+  bottom: -50%;
+  left: -50%;
+  position: absolute;
+  width: 45em;
+  height: 40em;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+#cur_temp {
+  font-size: 7em;
+  font-weight: 700;
+}
+.unit {
+  font-size: 3em;
+}
+#hours_summary {
+  font-weight: 500;
+}
+.daily_temperatures {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  font-weight: 700;
+}
+#day_max, #day_min {
+  font-size: 3em;
+  &::before {
+    display: inline-block;
+    font-family: 'weathericons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 0;
+    font-size: 1.5em;
+    position: relative;
+    top: 30px;
+    left: -10px;
+  }
+  + .unit {
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+}
+#day_max::before {
+  content: "\f058";
+}
+#day_min::before {
+  content: "\f044";
+  top: 20px;
+}
+#days_summary {
+  font-weight: 500;
+  display: block;
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+#days_icon {
+  font-size: 2em;
+  line-height: .8em;
 }

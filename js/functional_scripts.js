@@ -65,6 +65,10 @@ $(document).ready(function() {
   //   hour_pressure[i] = forecastData.hourly.data[i].pressure;
   //   hour_ozone[i] = forecastData.hourly.data[i].ozone;
   // }
+
+  $('#hours_summary').html(hours_summary);
+  $('#hours_icon').addClass('wi-forecast-io-'+hours_icon);
+
   // NEXT DAYS WEATHER DATA
   days_summary = forecastData.daily.summary;
   days_icon = forecastData.daily.icon;
@@ -96,6 +100,9 @@ $(document).ready(function() {
   //   day_pressure[i] = forecastData.daily.data[i].pressure;
   //   day_ozone[i] = forecastData.daily.data[i].ozone;
   }
+
+  $('#days_summary').html(days_summary);
+  $('#days_icon').addClass('wi-forecast-io-'+days_icon);
 
   // REVERSE GEOCODING
   var reverseGeoUrl = "http://nominatim.openstreetmap.org/reverse?format=json&lat="+position.lat+"&lon="+position.lon+"&zoom=18&addressdetails=1";
