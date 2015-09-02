@@ -4,17 +4,90 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Weather Forecast</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Weather Icons -->
+    <link rel="stylesheet" href="libs/weather-icons/css/weather-icons.css">
+    <!-- Raleway Font -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,700,500' rel='stylesheet' type='text/css'> -->
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="stylesheets/css/style.css">
   </head>
   <body>
+    <div class="container-fluid">
+
+      <div id="units_choice">
+        <h1 class="text-center">Choose either US units or SI units</h1>
+        <br>
+        <a id="us" class="btn btn-primary">
+          US units (ºF)
+        </a>
+        <a id="si" class="btn btn-primary">
+          SI units (ºC)
+        </a>
+      </div>
+
+      <div id="preloader">
+      	<div class="sunny"></div>
+      	<div class="cloudy"></div>
+      	<div class="rainy"></div>
+      	<div class="snowy"></div>
+      	<div class="rainbow"></div>
+      	<div class="starry"></div>
+      	<div class="stormy"></div>
+      </div>
+
+      <article class="hidden">
+        <div class="col-sm-6 bg-image">
+          <h1><i id="city"></i>, <small><i id="state"></i> - <i id="country"></i></small></h1>
+          <br>
+          <p id="time"></p>
+          <footer>
+            <div class="col-sm-6">
+              <i id="cur_icon" class="wi"></i>
+            </div>
+            <div class="col-sm-6 text-center">
+              <i id="cur_temp" class="lnum"></i> <i class="unit">ºF</i> <br>
+              <i id="hours_summary"></i>
+            </div>
+          </footer>
+          <div id="white_quarter_circle"></div>
+        </div>
+        <div class="col-sm-6 bg-color text-center lnum">
+          <div class="daily_temperatures clearfix">
+            <div class="col-sm-6">
+              <i id="day_max"></i> <i class="unit">ºF</i> <br>
+            </div>
+            <div class="col-sm-6">
+              <i id="day_min"></i> <i class="unit">ºF</i> <br>
+            </div>
+          </div>
+          <p>Precipitation Probability: <i id="cur_precip_probability"></i></p>
+          <p>Humidity: <i id="cur_humidity"></i></p>
+          <p>Wind Speed: <i id="cur_wind_speed"></i></p>
+          <p>Wind Bearing: <i id="cur_wind_bearing"></i></p>
+          <p>Cloud Cover: <i id="cur_cloud_cover"></i></p>
+          <p id="icon">Next Days: <br>
+            <span class="col-sm-2 col-sm-offset-1"><i id="days_icon" class="wi"></i></span>
+            <span class="col-sm-8"><i id="days_summary"></i></span></p>
+        </div>
+      </article>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Functions -->
+    <!-- <script src="js/functions.js"></script> -->
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -1,0 +1,143 @@
+// APP Css
+
+@import 'preloader';
+
+body {
+  height: 100vh;
+  color: #fff;
+  font-family: 'Lato';
+}
+i {
+  font-style: normal;
+}
+.container-fluid {
+  padding-right: 0; padding-left: 0;
+}
+#units_choice {
+  height: 100vh;  width: 100%;
+  background-color: #33495f;
+  color: #ecf0f1;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  h1 {
+    flex-basis: 100%;
+  }
+  a {
+    margin: 10px;
+  }
+}
+.bg-image {
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  footer {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+.bg-color {
+  height: 100vh;
+  font-size: 2em;
+  font-weight: 100;
+  p > i {
+    font-weight: 500;
+  }
+}
+h1 {
+  display: inline-block;
+  small {
+    color: #ddd;
+  }
+}
+#time {
+  display: inline-block;
+  font-weight: 300;
+}
+footer {
+  width: 100%;
+  i.wi {
+    font-size: 8em;
+    line-height: 1.5;
+    z-index: 2;
+    position: relative;
+  }
+}
+#white_quarter_circle {
+  bottom: -50%;
+  left: -50%;
+  position: absolute;
+  width: 44em;
+  height: 43em;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  z-index: 1;
+}
+#cur_temp {
+  font-size: 7em;
+  font-weight: 700;
+}
+.unit {
+  font-size: 3em;
+}
+#hours_summary {
+  font-weight: 500;
+}
+.daily_temperatures {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  font-weight: 700;
+}
+#day_max, #day_min {
+  font-size: 3em;
+  &::before {
+    display: inline-block;
+    font-family: 'weathericons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 0;
+    font-size: 1.5em;
+    position: relative;
+    top: 20px;
+    left: -10px;
+  }
+  + .unit {
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+}
+#day_max::before {
+  content: "\f058";
+}
+#day_min::before {
+  content: "\f044";
+  top: 20px;
+}
+#days_summary {
+  font-weight: 500;
+  display: block;
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+#days_icon {
+  font-size: 2em;
+  line-height: .8em;
+}
+
+.lnum {
+    font-variant-numeric: lining-nums;
+    -moz-font-feature-settings:"lnum" 1;
+    -moz-font-feature-settings:"lnum=1";
+    -ms-font-feature-settings:"lnum" 1;
+    -o-font-feature-settings:"lnum" 1;
+    -webkit-font-feature-settings:"lnum" 1;
+    font-feature-settings:"lnum" 1;
+}
