@@ -14,26 +14,40 @@
     <!-- Weather Icons -->
     <link rel="stylesheet" href="libs/weather-icons/css/weather-icons.css">
     <!-- Raleway Font -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,700,500' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,700,500' rel='stylesheet' type='text/css'> -->
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- Main Styles -->
     <link rel="stylesheet" href="stylesheets/css/style.css">
   </head>
   <body>
     <div class="container-fluid">
+      <div id="units_choice">
+        <h1 class="text-center">Choose either US units or SI units</h1>
+        <br>
+        <a id="us" class="btn btn-primary">
+          US units (ºF)
+        </a>
+        <a id="si" class="btn btn-primary">
+          SI units (ºC)
+        </a>
+      </div>
       <div class="col-sm-6 bg-image">
         <h1><i id="city"></i>, <small><i id="state"></i> - <i id="country"></i></small></h1>
+        <br>
+        <p id="time"></p>
         <footer>
           <div class="col-sm-6">
             <i id="cur_icon" class="wi"></i>
           </div>
           <div class="col-sm-6 text-center">
-            <i id="cur_temp"></i> <i class="unit">ºF</i> <br>
+            <i id="cur_temp" class="lnum"></i> <i class="unit">ºF</i> <br>
             <i id="hours_summary"></i>
           </div>
         </footer>
         <div id="white_quarter_circle"></div>
       </div>
-      <div class="col-sm-6 bg-color text-center">
+      <div class="col-sm-6 bg-color text-center lnum">
         <div class="daily_temperatures clearfix">
           <div class="col-sm-6">
             <i id="day_max"></i> <i class="unit">ºF</i> <br>
