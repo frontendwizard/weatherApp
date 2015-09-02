@@ -1,3 +1,7 @@
+// APP Css
+
+@import 'preloader';
+
 body {
   height: 100vh;
   color: #fff;
@@ -11,8 +15,8 @@ i {
 }
 #units_choice {
   height: 100vh;  width: 100%;
-  background-color: #ecf0f1;
-  color: #2c3e50;
+  background-color: #33495f;
+  color: #ecf0f1;
   position: absolute;
   top: 0;
   z-index: 3;

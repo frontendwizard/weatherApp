@@ -7,6 +7,10 @@ $(document).ready(function() {
     $('#units_choice').fadeOut();
     getWeatherData();
     $('.unit').html(temp_unit);
+    $('#preloader').delay(4600).fadeOut();
+    setTimeout(function(){
+      $('article').removeClass('hidden');
+    }, 5000);
   });
 
   $('#si').click(function() {
@@ -15,6 +19,10 @@ $(document).ready(function() {
     getWeatherData();
     temp_unit = 'ºC';
     $('.unit').html(temp_unit);
+    $('#preloader').delay(4600).fadeOut();
+    setTimeout(function(){
+      $('article').removeClass('hidden');
+    }, 5000);
   });
 
   function getWeatherData() {

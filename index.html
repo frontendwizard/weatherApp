@@ -22,6 +22,7 @@
   </head>
   <body>
     <div class="container-fluid">
+
       <div id="units_choice">
         <h1 class="text-center">Choose either US units or SI units</h1>
         <br>
@@ -32,39 +33,52 @@
           SI units (ºC)
         </a>
       </div>
-      <div class="col-sm-6 bg-image">
-        <h1><i id="city"></i>, <small><i id="state"></i> - <i id="country"></i></small></h1>
-        <br>
-        <p id="time"></p>
-        <footer>
-          <div class="col-sm-6">
-            <i id="cur_icon" class="wi"></i>
-          </div>
-          <div class="col-sm-6 text-center">
-            <i id="cur_temp" class="lnum"></i> <i class="unit">ºF</i> <br>
-            <i id="hours_summary"></i>
-          </div>
-        </footer>
-        <div id="white_quarter_circle"></div>
+
+      <div id="preloader">
+      	<div class="sunny"></div>
+      	<div class="cloudy"></div>
+      	<div class="rainy"></div>
+      	<div class="snowy"></div>
+      	<div class="rainbow"></div>
+      	<div class="starry"></div>
+      	<div class="stormy"></div>
       </div>
-      <div class="col-sm-6 bg-color text-center lnum">
-        <div class="daily_temperatures clearfix">
-          <div class="col-sm-6">
-            <i id="day_max"></i> <i class="unit">ºF</i> <br>
-          </div>
-          <div class="col-sm-6">
-            <i id="day_min"></i> <i class="unit">ºF</i> <br>
-          </div>
+
+      <article class="hidden">
+        <div class="col-sm-6 bg-image">
+          <h1><i id="city"></i>, <small><i id="state"></i> - <i id="country"></i></small></h1>
+          <br>
+          <p id="time"></p>
+          <footer>
+            <div class="col-sm-6">
+              <i id="cur_icon" class="wi"></i>
+            </div>
+            <div class="col-sm-6 text-center">
+              <i id="cur_temp" class="lnum"></i> <i class="unit">ºF</i> <br>
+              <i id="hours_summary"></i>
+            </div>
+          </footer>
+          <div id="white_quarter_circle"></div>
         </div>
-        <p>Precipitation Probability: <i id="cur_precip_probability"></i></p>
-        <p>Humidity: <i id="cur_humidity"></i></p>
-        <p>Wind Speed: <i id="cur_wind_speed"></i></p>
-        <p>Wind Bearing: <i id="cur_wind_bearing"></i></p>
-        <p>Cloud Cover: <i id="cur_cloud_cover"></i></p>
-        <p id="icon">Next Days: <br>
-          <span class="col-sm-2 col-sm-offset-1"><i id="days_icon" class="wi"></i></span>
-          <span class="col-sm-8"><i id="days_summary"></i></span></p>
-      </div>
+        <div class="col-sm-6 bg-color text-center lnum">
+          <div class="daily_temperatures clearfix">
+            <div class="col-sm-6">
+              <i id="day_max"></i> <i class="unit">ºF</i> <br>
+            </div>
+            <div class="col-sm-6">
+              <i id="day_min"></i> <i class="unit">ºF</i> <br>
+            </div>
+          </div>
+          <p>Precipitation Probability: <i id="cur_precip_probability"></i></p>
+          <p>Humidity: <i id="cur_humidity"></i></p>
+          <p>Wind Speed: <i id="cur_wind_speed"></i></p>
+          <p>Wind Bearing: <i id="cur_wind_bearing"></i></p>
+          <p>Cloud Cover: <i id="cur_cloud_cover"></i></p>
+          <p id="icon">Next Days: <br>
+            <span class="col-sm-2 col-sm-offset-1"><i id="days_icon" class="wi"></i></span>
+            <span class="col-sm-8"><i id="days_summary"></i></span></p>
+        </div>
+      </article>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
